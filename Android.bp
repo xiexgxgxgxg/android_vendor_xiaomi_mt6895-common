@@ -7622,31 +7622,31 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libmnl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6895/libmnl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6895",
-    prefer: true,
-    soc_specific: true,
-}
+// cc_prebuilt_library_shared {
+//     name: "libmnl",
+//     owner: "xiaomi",
+//     strip: {
+//         none: true,
+//     },
+//     target: {
+//         android_arm64: {
+//             srcs: [
+//                 "proprietary/vendor/lib64/mt6895/libmnl.so",
+//             ],
+//             shared_libs: [
+//                 "libcutils",
+//                 "libc++",
+//                 "libc",
+//                 "libm",
+//                 "libdl",
+//             ],
+//         },
+//     },
+//     compile_multilib: "64",
+//     relative_install_path: "mt6895",
+//     prefer: true,
+//     soc_specific: true,
+// }
 
 cc_prebuilt_library_shared {
     name: "libneuron_runtime.5",
@@ -8563,12 +8563,12 @@ install_symlink {
     symlink_target: "/vendor/lib64/mt6895/libdpframework.so",
 }
 
-install_symlink {
-    name: "vendor_lib64_libmnl_so",
-    soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6895/libmnl.so",
-}
+// install_symlink {
+//     name: "vendor_lib64_libmnl_so",
+//     soc_specific: true,
+//     installed_location: "lib64/libmnl.so",
+//     symlink_target: "/vendor/lib64/mt6895/libmnl.so",
+// }
 
 install_symlink {
     name: "vendor_lib64_libmtk_drvb_so",
