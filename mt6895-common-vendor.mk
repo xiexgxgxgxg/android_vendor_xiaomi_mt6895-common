@@ -170,7 +170,7 @@ PRODUCT_PACKAGES += \
     libcustom_nvram \
     libcvsd_mtk \
     libfile_op \
-    libformatter \
+    libformatter_mtk \
     libfvaudio \
     libged \
     libgralloc_extra \
