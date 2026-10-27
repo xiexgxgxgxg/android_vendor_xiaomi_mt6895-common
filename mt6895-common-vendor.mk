@@ -312,8 +312,7 @@ PRODUCT_PACKAGES += \
     mnld \
     mtk_agpsd \
     netdagent \
-    nvram_daemon \
-    wlan_assistant
+    nvram_daemon
 
 PRODUCT_PACKAGES += \
     vendor_lib_libaiselector_so \
