@@ -2950,14 +2950,13 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libformatter_mtk",
     owner: "xiaomi",
-    check_elf_files: false,
     strip: {
         none: true,
     },
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libformatter.so",
+                "proprietary/vendor/lib/libformatter_mtk.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -2976,7 +2975,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
+                "proprietary/vendor/lib64/libformatter_mtk.so",
             ],
             shared_libs: [
                 "libion_mtk",
